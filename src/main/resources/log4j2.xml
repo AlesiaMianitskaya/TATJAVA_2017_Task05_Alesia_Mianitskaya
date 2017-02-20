@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <properties>
+        <property name="basePatternLayout">%d{HH:mm} [%t] %-5level %logger{36} - %msg%n</property>
+    </properties>
+    <appenders>
+        <console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="${basePatternLayout}"/>
+        </console>
+    </appenders>
+    <loggers>
+        <root level="info">
+            <appender-ref ref="STDOUT"/>
+        </root>
+    </loggers>
+</configuration>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.epam.mn.com/pearl-menu"
+           xmlns:tns="http://www.epam.mn.com/pearl-menu"
+           elementFormDefault="qualified">
+
+    <!--complex type for root element-->
+    <xs:element name="pearl-menu">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="part" type="tns:Part" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--complex type for element part-->
+    <xs:complexType name="Part">
+        <xs:sequence>
+            <xs:element name="meal" type="tns:Meal" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="category" type="tns:categoryType" use="required"/>
+    </xs:complexType>
+
+    <!--simple type for tag's attribute category-->
+    <xs:simpleType name="categoryType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="cold-menu"/>
+            <xs:enumeration value="hot-menu"/>
+            <xs:enumeration value="breakfast-menu"/>
+            <xs:enumeration value="soup-menu"/>
+            <xs:enumeration value="fish-menu"/>
+            <xs:enumeration value="meat-menu"/>
+            <xs:enumeration value="garnish-menu"/>
+            <xs:enumeration value="grill-menu"/>
+            <xs:enumeration value="chefs-menu"/>
+            <xs:enumeration value="attachment"/>
+            <xs:enumeration value="dessert-menu"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--complex type for tag meal-->
+    <xs:complexType name="Meal">
+        <xs:sequence>
+            <xs:element name="photo" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="portion" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="price" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="tns:IdMeal" use="required"/>
+    </xs:complexType>
+
+    <!--simple type for tag's attribute id-->
+    <xs:simpleType name="IdMeal">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{3}[a-z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

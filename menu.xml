@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pearl-menu xmlns="http://www.epam.mn.com/pearl-menu"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.epam.mn.com/pearl-menu menu.xsd">
+    <part category="cold-menu">
+        <meal id="100c">
+            <photo>images/food_1.gif</photo>
+            <title>Зелень</title>
+            <description>Кинза, лук, петрушка, укроп, базилик</description>
+            <portion>30</portion>
+            <price>3 BYN</price>
+        </meal>
+    </part>
+    <part category="hot-menu">
+        <meal id="010h">
+            <photo>images/food_2.gif</photo>
+            <title>Ахтамар мясной</title>
+            <description>Колбаса, ветчина, буженина, сыр, запеченные на мангале в лаваше</description>
+            <portion>1 шт.</portion>
+            <price>15 BYN</price>
+        </meal>
+    </part>
+    <part category="breakfast-menu">
+        <meal id="001b">
+            <photo>images/food_3.gif</photo>
+            <title>яичница</title>
+            <description>яичница с беконом</description>
+            <portion>125</portion>
+            <price>5 BYN</price>
+        </meal>
+    </part>
+    <part category="soup-menu">
+        <meal id="110s">
+            <photo>images/food_5.gif</photo>
+            <title>Томатный с сыром</title>
+            <description>Томатный суп с адыгейским сыром</description>
+            <portion>200</portion>
+            <price>7 BYN</price>
+        </meal>
+    </part>
+    <part category = "fish-menu">
+        <meal id="011f">
+            <photo>images/food_6.gif</photo>
+            <title>Речная форель</title>
+            <description>Речная форель с лимоном и красным луком</description>
+            <portion>300</portion>
+            <price>9 BYN</price>
+        </meal>
+    </part>
+    <part category="meat-menu">
+        <meal id="101m">
+            <photo>images/food_7.gif</photo>
+            <title>Сувлаки</title>
+            <description>Шашлычки из баранины</description>
+            <portion>300</portion>
+            <price>15 BYN</price>
+        </meal>
+    </part>
+    <part category="garnish-menu">
+        <meal id="200g">
+            <photo>images/food_8.gif</photo>
+            <title>Капуста брокколи</title>
+            <description>Капуста брокколи припущенная</description>
+            <portion>150</portion>
+            <price>5 BYN</price>
+        </meal>
+    </part>
+    <part category = "grill-menu">
+        <meal id="020g">
+            <photo>images/food_9.gif</photo>
+            <title>Лимонно-горчичные куриные шашлычки</title>
+            <description>Цедра и сок лимона освежает блюдо</description>
+            <portion>250</portion>
+            <price>12 BYN</price>
+        </meal>
+    </part>
+    <part category="chefs-menu">
+        <meal id="002c">
+            <photo>images/food_10.gif</photo>
+            <title>Жульен грибной</title>
+            <description>Жульен с белыми грибами и сыром</description>
+            <portion>100</portion>
+            <price>29 BYN</price>
+        </meal>
+    </part>
+    <part category="attachment">
+        <meal id="220a">
+            <photo>images/food_11.gif</photo>
+            <title>Соус "Тар-тар</title>
+            <description>Сметана, мойонез, огурцы, чеснок</description>
+            <portion>90</portion>
+            <price>2 BYN</price>
+        </meal>
+    </part>
+    <part category="dessert-menu">
+        <meal id="202d">
+            <photo>images/food_12.gif</photo>
+            <title>Яблочный пирог</title>
+            <description>Пирог с яблоками, карамелью и корицей</description>
+            <portion>180</portion>
+            <price>3 BYN</price>
+        </meal>
+    </part>
+</pearl-menu>
